@@ -7,23 +7,23 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script lang="javascript" src="node_modules/xlsx/dist/xlsx.full.min.js"></script>
 	<script src="js/shim.js"></script>
+	
+    <link rel="stylesheet" href='css/style.css'>
   </head>
 
-  <style>
-  </style>
 
   <body>
+	<iframe id="fileDown" style='visibility:hidden' src="" width="1" height="1">
+	</iframe></br>
 	다음 파일은 양식파일입니다.</br>
 
-	<a href="javascript:download()">다운로드</a>
-	<iframe id="fileDown" style='visibility:hidden' src="" width="1" height="1">
-	</iframe>
+	<a href="javascript:download()">다운로드</a></br>
 
 	양식에 맞지 않으면 프로그램이 제대로 작동하지 않습니다.</br>
 	양식에 맞게 엑셀파일을 작성후 업로드 해주세요</br>
     <script>
 		function download(){
-			var url="/shift_assign.xlsx";
+			var url="https://github.com/bleetoteelb/shift_assign/blob/master//shift_assign.txt?raw=true";
 
 			document.getElementById('fileDown').src = url;
 			document.getElementById('fileDown').location.reload();
