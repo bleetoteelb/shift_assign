@@ -14,8 +14,20 @@
 
   <body>
 	다음 파일은 양식파일입니다.</br>
+
+	<a href="javascript:download()">다운로드</a>
+	<iframe id="fileDown" style='visibility:hidden' src="" width="1" height="1">
+	</iframe>
+
 	양식에 맞지 않으면 프로그램이 제대로 작동하지 않습니다.</br>
 	양식에 맞게 엑셀파일을 작성후 업로드 해주세요</br>
-    hello!
+    <script>
+		function download(){
+			var url="/shift_assign.xlsx";
+
+			document.getElementById('fileDown').src = url;
+			document.getElementById('fileDown').location.reload();
+		}
+	</script>
   </body>
 </html>
