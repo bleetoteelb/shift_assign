@@ -7,27 +7,17 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script lang="javascript" src="node_modules/xlsx/dist/xlsx.full.min.js"></script>
 	<script src="js/shim.js"></script>
-	
+	<script src="js/random_assign.js"></script>	
     <link rel="stylesheet" href='css/style.css'>
   </head>
 
 
   <body>
-	<iframe id="fileDown" style='visibility:hidden' src="" width="1" height="1">
-	</iframe></br>
-	다음 파일은 양식파일입니다.</br>
-
-	<a href="javascript:download()">다운로드</a></br>
-
 	양식에 맞지 않으면 프로그램이 제대로 작동하지 않습니다.</br>
-	양식에 맞게 엑셀파일을 작성후 업로드 해주세요</br>
-    <script>
-		function download(){
-			var url="https://github.com/bleetoteelb/shift_assign/blob/master//shift_assign.txt?raw=true";
-
-			document.getElementById('fileDown').src = url;
-			document.getElementById('fileDown').location.reload();
-		}
-	</script>
+	메모장에 옮기셔서 재활용하시면 편합니다</br>
+    양식에 잘 맞게 써서 text창에 입력후 만들기를 눌러주세요!</br>
+	</br>
+	<textarea name='uploaded' id='uploaded'></textarea></br>
+	<input type='button' value='만들기' id='upload' />
   </body>
 </html>
