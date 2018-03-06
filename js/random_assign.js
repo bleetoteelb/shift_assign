@@ -6,6 +6,16 @@ $(document).ready(function(){
 
 function get_infor(){
 	var text = ($('#uploaded').val()).split('\n');
+	var text_length = text.length;
+
+	for(var i=0;i<text_length;i++){
+		if(text[i].split('|')[0]=='*'){
+			console.log(text[i]);
+		}
+	}
+	
+	console.log(text);
+	console.log(length);
 }
 
 function check_word(number,count){
